@@ -1,21 +1,20 @@
 package N1000_9999.N1000_1999;
 
+import java.io.*;
 import java.util.*;
 
 public class N1018{
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int M = sc.nextInt();
-        sc.nextLine();
+    public static void main(String[] args) throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+
+        int N = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
 
         //체스판 배열로 받기
         char[][] arr = new char[N][M];
         for (int i = 0; i < N; i++) {
-            String line = sc.nextLine();
-            for(int j = 0; j < M; j++) {
-                arr[i][j] = line.charAt(j);
-            }
+            arr[i] = br.readLine().toCharArray();
         }
 
         //M - ? = 8, ? = M - 8
