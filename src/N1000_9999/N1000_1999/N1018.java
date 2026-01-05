@@ -34,7 +34,7 @@ public class N1018{
                         }
                     }
                 }
-                max = Math.min(max, 64-max);
+                max = Math.min(max, 64-max); //B의 경우는 64-W 와 동일
                 min = Math.min(min, max);
                 max = 0;
             }
