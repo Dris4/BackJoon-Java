@@ -1,5 +1,4 @@
 .idea/
-/playground/
 note.txt
 
 
@@ -33,3 +32,4 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/src/playground/
